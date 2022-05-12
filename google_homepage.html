@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOGLE HOMEPAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *,html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: white;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        header  h2 {
+            font-size: 16px;
+            color: black;
+            margin-right: 15px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        header h2:hover {text-decoration: underline;}
+
+        header .fa-th {
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 15px;
+            color: rgb(105, 103, 103);
+            padding: 10px;
+        }
+
+        header .fa-th:hover {
+            border-radius: 50%;
+            background-color: rgb(187, 182, 182);
+        }
+
+        header h3 {
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 25px;
+            padding: 6px 10px 6px 10px;
+            color: white;
+            background: rgb(98, 201, 98);
+            border-radius: 50%;
+            font-weight: 400;
+        }
+
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        main h1 {
+            font-size: 95px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+        #first {
+            color: royalblue;
+        }
+        #sec {
+            color: orangered
+        }
+        #third {
+            color: yellow
+        }
+        #fourth {
+            color: royalblue;
+        }
+        #fifth {
+            color: rgb(12, 143, 12);
+        }
+        #sixth {
+            color: orangered;
+        }
+
+        .searchcontainer input{
+            width: 550px;
+            height: 45px;
+            padding-left: 40px;
+            padding-right: 30px;
+            border: 1px solid rgb(167, 166, 166);
+            border-radius: 25px;
+            font-size: 18px;
+            color:black;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .searchcontainer input:hover {
+            box-shadow: 0 0 5px 1px gray;
+        }
+
+        #search, #voice {
+            position: relative;
+            cursor: pointer
+        }
+
+        #search {
+            left: 35px;
+            top: 1px;
+            color: gray;
+        }
+        #voice {
+            right: 30px;
+            top: 1spx;
+            color: rgb(42, 151, 187)
+        }
+
+        .searchbtn {
+            margin-top: 30px;
+        }
+        .searchbtn button {
+            padding: 5px 20px;
+            color: rgb(70, 69, 69);
+            height: 35px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            background: whitesmoke;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        .searchbtn button:hover {
+            box-shadow: 0 0 1px 1px rgb(172, 171, 171);
+        }
+        .gsearch {
+            margin-right: 20px;
+        }
+        .lucky {
+            margin-left: 20px;
+        }
+        
+        #lang {
+            font-size: 15px;
+        }
+        #country {
+            font-size: 16px;
+            font-family: ;
+        }
+
+        footer {
+            margin-top:190px;
+        }
+
+        footer .languages {
+            background: whitesmoke;
+            padding: 15px 0px 15px 28px;
+            width: 100%;    
+            color: gray;
+            border-bottom: 1px solid gray;
+        }
+
+        footer .foot {
+            background: whitesmoke;
+            padding: 15px 35px 15px 0px;
+            width: 100%;
+            color: rgb(59, 59, 59);
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+
+        .foot p:hover {
+            text-decoration: underline;
+        }
+
+        .foot .business {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .business p {
+            margin-left: 30px;
+            cursor: pointer
+        }
+
+        .foot .setting {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .setting p {
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2 onclick="window.location = 'https://mail.google.com/mail/&ogbl'">Gmail</h2>
+        <h2 onclick="window.location = 'https://www.google.com.np/imghp?hl=en&ogbl'">Images</h2>
+        <i class="fa fa-th" title="google apps">
+        </i>
+        <h3 title="Googel Account">N</h3>
+    </header>
+    <main>
+        <h1><span id="first">G</span><span id="sec">o</span><span id="third">o</span><span id="fourth">g</span><span id="fifth">l</span><span id="sixth">e</span></h1>
+        <div class="searchcontainer">
+            <i id="search" class="fa fa-search" ></i>
+            <input type="search" title="search" clsss="inp">
+            <i id="voice" class="fa fa-microphone" title="search by voice"></i>
+        </div>
+        <div class="searchbtn">
+            <button type="button" class="gsearch">Google Search</button>
+            <button type="button" class="lucky">I'm feeling Lucky</button>
+        </div>
+        <p id="lang">Google is offered in: <span id="country"><a href="#">Nepali</a></span></p>
+    </main>
+    <footer>
+        <div class="languages">
+            <p>Nepali</p>
+        </div>
+        <div class="foot">
+            <div class="business">
+                <p onclick="window.location = 'https://about.google/?utm_source=google-NP&utm_medium=referral&utm_campaign=hp-footer&fg=1'">About</p>
+                <p onclick="window.location = 'https://www.google.com/intl/en_np/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1'">Advertising</p>
+                <p onclick="window.location = 'https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1'">Business</p>
+                <p onclick="window.location = 'https://google.com/search/howsearchworks/?fg=1'">How Search Works</p>
+            </div>
+            <div class="setting">
+                <p onclick="window.location = 'https://policies.google.com/privacy?hl=en-NP&fg=1'">Privacy</p>
+                <p onclick="window.location = 'https://policies.google.com/terms?hl=en-NP&fg=1'">Terms</p>
+                <p>Setting</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const lucky = document.querySelector(".lucky");
+        lucky.addEventListener("click", () => {
+            window.location = "https://www.google.com/doodles";
+        });
+
+        const inp = document.querySelector("input");
+        const gsearchbtn = document.querySelector(".gsearch");
+        gsearchbtn.addEventListener("click", () => {
+            var val = `https://www.google.com/search?q=${inp.nodeValue}&bih=644&biw=1397&rlz=1C1CHBD_enNP959NP959&sxsrf=AOaemvLjk9lUdy9CbZ6QYRUjaAER0UxUpg%3A1636266955161&source=hp&ei=ynOHYYKxObGPxc8Plr6VoAI&iflsig=ALs-wAMAAAAAYYeB2yc9oWQXEAQq0Qzk7rrTJkJJ5n4P&oq=hello&gs_lcp=Cgdnd3Mtd2l6EAMyCwguEIAEELEDEJMCMggIABCABBCxAzIFCAAQgAQyCAgAEIAEELEDMggIABCABBCxAzIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQguEIAEOgcIIxDqAhAnOgQIIxAnOgUIABCRAjoLCAAQgAQQsQMQgwE6CAgAELEDEIMBOgQILhBDOgcILhCxAxBDOgQIABBDOg4ILhCABBCxAxDHARCjAjoKCC4QsQMQQxCTAjoHCAAQsQMQQzoKCC4QxwEQ0QMQQzoKCC4QsQMQgwEQQ1CiBFiNCWDGDGgBcAB4AIABhAKIAe8IkgEDMi01mAEAoAEBsAEK&sclient=gws-wiz&ved=0ahUKEwiCvu200YX0AhWxR_EDHRZfBSQQ4dUDCAc&uact=5`
+            window.location = val;
+        });
+
+        const img = 
+
+
+    </script>
+</body>
+</html>
